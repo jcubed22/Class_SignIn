@@ -1,15 +1,24 @@
-<div class="row">
-  <a ui-sref="studentPage">Sign In</a> | <a ui-sref="teacherPage">Who's here?</a>
+<div class="row noselect">
+  <span class="toplinks">
+    <a ui-sref="studentPage">Sign In</a> | <a ui-sref="teacherPage">Who's here?</a>
+  </span>
 
   <h1>Today's Attendance</h1>
   <div class="well row">
     <div class="col-md-6">
       <h2 class="text-center">Present</h2>
       <hr>
+        <div class="text-center" ng-repeat="item in students | filter: {isHere: true}">
+          <strong>{{ item.name }}</strong>
+        </div>
     </div>
     <div class="col-md-6">
       <h2 class="text-center">Absent</h2>
       <hr>
+        <div class="text-center" ng-repeat="item in students | filter: {isHere: false}">
+          <strong>{{ item.name }}</strong>
+        </div>
     </div>
   </div>
+  <button class="btn btn-primary btn-lg" ui-sref="home">Go home</button>
 </div>
