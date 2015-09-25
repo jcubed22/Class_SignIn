@@ -2,23 +2,42 @@
   <span class="toplinks">
     <a ui-sref="studentPage">Sign In</a> | <a ui-sref="teacherPage">Who's here?</a>
   </span>
-
   <h1>Today's Attendance</h1>
-  <div class="well row">
-    <div class="col-md-6">
-      <h2 class="text-center">Present</h2>
-      <hr>
-        <div class="text-center" ng-repeat="item in students | filter: {isHere: true}">
-          <strong>{{ item.name }}</strong>
-        </div>
-    </div>
-    <div class="col-md-6">
-      <h2 class="text-center">Absent</h2>
-      <hr>
-        <div class="text-center" ng-repeat="item in students | filter: {isHere: false}">
-          <strong>{{ item.name }}</strong>
-        </div>
-    </div>
+</div>
+<div class="row well">
+  <div class="col-md-6">
+    <h2 class="text-center">Present</h2>
+    <hr>
+    <table class="attend">
+      <tr ng-repeat="item in students | filter: {isHere: true}">
+        <td class="name"><strong>{{ item.name }}</strong></td>
+        <td>
+          <button type="button" ng-click="deleteStudent(item)" class="btn btn-danger">EXPEL</button>
+        </td>
+      </tr>
+    </table>
+      <!-- <div class="text-center" ng-repeat="item in students | filter: {isHere: true}">
+        <strong>{{ item.name }}</strong>
+      </div> -->
   </div>
-  <button class="btn btn-primary btn-lg" ui-sref="home">Go home</button>
+  <div class="col-md-6">
+    <h2 class="text-center">Absent</h2>
+    <hr>
+    <table class="attend">
+      <tr ng-repeat="item in students | filter: {isHere: false}">
+        <td class="name"><strong>{{ item.name }}</strong></td>
+        <td>
+          <button type="button" ng-click="deleteStudent(item)" class="btn btn-danger">EXPEL</button>
+        </td>
+      </tr>
+    </table>
+    <!-- <h2 class="text-center">Absent</h2>
+    <hr>
+      <div class="text-center" ng-repeat="item in students | filter: {isHere: false}">
+        <strong>{{ item.name }}</strong> - <button class="btn btn-danger">EXPEL</button>
+      </div> -->
+  </div>
+</div>
+<div class="row noselect">
+<button class="btn btn-primary btn-lg" ui-sref="home">Go home</button>
 </div>

@@ -1,17 +1,5 @@
-.toplinks {
-  font-size: 1.5em;
-}
-
 a {
   cursor: pointer;
-}
-
-.col-md-6 {
-  font-size: 2em;
-}
-
-.name {
-  width: 175px;
 }
 
 td {
@@ -26,6 +14,10 @@ hr {
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
+table.attend {
+  margin: auto;
+}
+
 .noselect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -33,4 +25,16 @@ hr {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.toplinks {
+  font-size: 1.5em;
+}
+
+.col-md-6 {
+  font-size: 1.3em;
+}
+
+.name {
+  width: 175px;
 }
