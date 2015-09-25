@@ -1,3 +1,12 @@
 a {
   cursor: pointer;
 }
+
+.name {
+  width: 110px;
+}
+
+td {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
