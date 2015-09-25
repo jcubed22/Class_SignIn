@@ -5,4 +5,9 @@ classSignIn.config(function($stateProvider, $urlRouterProvider) {
     url: "",
     templateUrl: "partials/home.html"
   });
+
+  $stateProvider.state('signin', {
+    url: "signin",
+    templateUrl: "partials/signin.html"
+  });
 });
