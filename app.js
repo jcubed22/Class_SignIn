@@ -7,13 +7,13 @@ classSignIn.config(function($stateProvider, $urlRouterProvider) {
   });
 
   $stateProvider.state('studentPage', {
-    url: "student",
+    url: "signin",
     templateUrl: "partials/signin.html",
     controller: 'StudentsCtrl'
   });
 
   $stateProvider.state('teacherPage', {
-    url: "teacher",
+    url: "attendance",
     templateUrl: "partials/attendance.html",
     controller: 'AttendanceCtrl'
   });
