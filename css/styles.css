@@ -1,5 +1,13 @@
+.toplinks {
+  font-size: 1.5em;
+}
+
 a {
   cursor: pointer;
+}
+
+.col-md-6 {
+  font-size: 2em;
 }
 
 .name {
@@ -9,4 +17,20 @@ a {
 td {
   padding-top: .5em;
   padding-bottom: .5em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

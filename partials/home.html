@@ -1,8 +1,10 @@
-<div class="row">
-  <a ui-sref="studentPage">Sign In</a> | <a ui-sref="teacherPage">Who's here?</a>
+<div class="row noselect">
+  <span class="toplinks">
+    <a ui-sref="studentPage">Sign In</a> | <a ui-sref="teacherPage">Who's here?</a>
+  </span>
   <div class="well">
-    <h1>Welcome to Class!  What would you like to do?</h1>
-    <button class="btn btn-primary" ui-sref="studentPage">Sign In</button>
-    <button class="btn btn-success" ui-sref="teacherPage">Who's here?</button>
+      <h1>Welcome to class!  Who are you?</h1>
+      <button class="btn btn-primary btn-lg" ui-sref="studentPage">Student</button>
+      <button class="btn btn-success btn-lg" ui-sref="teacherPage">Teacher</button>
   </div>
 </div>

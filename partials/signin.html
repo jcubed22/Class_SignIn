@@ -1,5 +1,7 @@
-<div class="row">
-  <a ui-sref="studentPage">Sign In</a> | <a ui-sref="teacherPage">Who's here?</a>
+<div class="row noselect">
+  <span class="toplinks">
+    <a ui-sref="studentPage">Sign In</a> | <a ui-sref="teacherPage">Who's here?</a>
+  </span>
 
   <h1>Sign In</h1>
   <div class="well" ng-controller="AttendanceCtrl">
@@ -15,5 +17,5 @@
       </tr>
     </table>
   </div>
-  <button ui-sref="home" class="btn btn-primary">Go home</button>
+  <button ui-sref="home" class="btn btn-primary btn-lg">Go home</button>
 </div>
