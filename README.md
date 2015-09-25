@@ -12,7 +12,7 @@ _On the main page the user is asked to identify themselves as either a student o
 
 * _Clone the repository from GitHub._
 * _On Windows machines: Download the Mongoose executable file from <a href="https://www.cesanta.com/mongoose">https://www.cesanta.com/mongoose</a> and copy it to the root directory of the project folder.  Run it as administrator and you'll automatically be taken to the project home page.  You may also need to add an exception for Mongoose in your anti-virus software._
-* _On Macs: Open Terminal and navigate to the project folder root.  Then enter the command "$ python -m SimpleHTTP Server" and navigate to localhost:8000 in your browser.
+* _On Macs: Open Terminal and navigate to the project folder root.  Then enter the command "$ python -m SimpleHTTP Server" and navigate to localhost:8000 in your browser._
 
 
 ## Technologies Used
