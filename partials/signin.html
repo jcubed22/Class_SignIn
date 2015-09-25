@@ -1,15 +1,19 @@
 <div class="row">
-  <a ui-sref="signin">Sign In</a> | <a ui-sref="checkStatus">Who's here?</a>
+  <a ui-sref="studentPage">Sign In</a> | <a ui-sref="teacherPage">Who's here?</a>
 
   <h1>Sign In</h1>
   <div class="well" ng-controller="AttendanceCtrl">
     <table>
       <tr ng-repeat="item in students">
-        <td class="name">{{ item.name }}</td>
-        <td>
-          <button ng-click="signIn(item)" class="btn btn-primary">Sign in</button>
+        <td class="name"><strong>{{ item.name }}</strong></td>
+        <td ng-hide="item.isHere">
+          <button type="button" ng-click="signIn(item)" class="btn btn-primary">Sign in</button>
+        </td>
+        <td ng-show="item.isHere">
+          <button type="button" ng-click="signOut(item)" class="btn btn-warning">Sign out</button>
         </td>
       </tr>
     </table>
   </div>
+  <button ui-sref="home" class="btn btn-primary">Go home</button>
 </div>
